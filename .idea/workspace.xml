@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Gaming Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/consts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/menu.py" afterDir="false" />
+    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Created menu background;&#10;Added menu music;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bird0.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Bird0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bird1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Bird1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bird2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Bird2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bird3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Bird3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bird4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Bird4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bird5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Bird5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hurt1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Hurt1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Menu.wav" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Menu.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MenuBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/MenuBg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +34,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Matheus1nico&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Matheus1nico/Gaming-Project.git&quot;,
+    &quot;accountId&quot;: &quot;b31f0300-a2bd-493d-a6ca-a64bdfbe4089&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="31KJOpQjc3XrEgOaCOpK7Efdzn6" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,19 +57,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.game.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.menu.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/matheus/ADS/Linguagem de Programação Aplicada/Gaming Project/code/main.py"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.menu.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/matheus/ADS/Linguagem de Programação Aplicada/Gaming Project/code/main.py&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code" />
@@ -100,6 +115,27 @@
       <option name="presentableId" value="Default" />
       <updated>1755266801574</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created menu background;&#10;Added menu music;">
+      <option name="closed" value="true" />
+      <created>1755295531545</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755295531545</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created menu background;&#10;Added menu music;">
+      <option name="closed" value="true" />
+      <created>1755295586228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755295586228</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created menu background;&#10;Added menu music;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created menu background;&#10;Added menu music;" />
   </component>
 </project>
