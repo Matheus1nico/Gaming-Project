@@ -3,7 +3,7 @@ from pygame import Surface, Rect
 from pygame.font import Font
 import pygame.image
 
-from code.consts import WIN_WIDTH, G_TITLE_C, MENU_OPTIONS, WHITE_C, MENU_OP_C, BLACK_C, YELLOW_C
+from code.consts import WIN_WIDTH, GAME_TITLE_C, MENU_OPTIONS, WHITE_C, YELLOW_C
 
 
 class Menu:
@@ -22,7 +22,7 @@ class Menu:
             clock.tick(60) #Fixing Menu FPS
 
             self.window.blit(source = self.surface, dest = self.rect)
-            self.menu_text(90, "The Speedster Bird", G_TITLE_C, ((WIN_WIDTH / 2), 40))
+            self.menu_text(90, "The Speedster Bird", GAME_TITLE_C, ((WIN_WIDTH / 2), 40))
 
             for op in range(len(MENU_OPTIONS)):
                 if op == menu_option:

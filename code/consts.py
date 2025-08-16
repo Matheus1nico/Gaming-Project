@@ -11,8 +11,7 @@ GREEN_C = (0, 128, 0)
 CYAN_C = (0, 128, 128)
 BLACK_C = (0, 0, 0)
 
-G_TITLE_C = (153, 255, 51)
-MENU_OP_C = (255, 255, 255)
+GAME_TITLE_C = (153, 255, 51)
 
 #Menu Options
 MENU_OPTIONS  = ('JOGAR', 'PONTUAÇÕES', 'SAIR ')
