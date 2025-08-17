@@ -1,7 +1,9 @@
+import pygame
+
 from code.consts import WINDOW_WIDTH, ENTITIES_SPEED
 from code.entity import Entity
 
-class GameBackground:
+class GameplayBg(Entity):
     def __init__(self, name: str, position: tuple):
         super().__init__(name, position)
 

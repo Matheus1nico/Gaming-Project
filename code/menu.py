@@ -34,8 +34,8 @@ class Menu:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     print('Closing Game...')
-                    pygame.quit()  # close window
-                    quit()  # end pygame
+                    pygame.quit()  #close window
+                    quit()  #end pygame
 
                 if event.type == pygame.KEYDOWN: #Menu Navigation
                     if event.key == pygame.K_DOWN:
@@ -50,8 +50,8 @@ class Menu:
                     if event.key == pygame.K_RETURN:
                         return MENU_OPTIONS[menu_option]
 
-    def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_position: tuple):
+    def menu_text(self, text_size: int, text: str, text_color: tuple, text_position: tuple):
         text_font: Font = pygame.font.SysFont(name="Lucida Sans Typewriter", size=text_size)
         text_surface = text_font.render(text, True, text_color)
-        text_rect = text_surface.get_rect(center=text_center_position)
+        text_rect = text_surface.get_rect(center=text_position)
         self.window.blit(source = text_surface, dest = text_rect)

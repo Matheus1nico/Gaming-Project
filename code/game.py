@@ -1,10 +1,7 @@
-import sys
 import pygame
-
 from code.gameplay import Gameplay
 from code.menu import Menu
 from code.consts import WINDOW_HEIGHT, WINDOW_WIDTH, MENU_OPTIONS
-
 
 class Game:
     def __init__(self):
@@ -18,12 +15,12 @@ class Game:
 
             if menu_return in [MENU_OPTIONS[0]]:
                 gameplay = Gameplay(self.window, 'Gameplay')
-                level_return = gameplay.run()
+                gameplay_return = gameplay.run()
 
             elif menu_return == MENU_OPTIONS[2]:
                 print('Quiting Game...')
                 pygame.quit()
                 quit()
-                sys.exit()
+
             else:
                 pass
