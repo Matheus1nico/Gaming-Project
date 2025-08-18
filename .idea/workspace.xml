@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Finished gameplay background;&#10;Implement gameplay music;&#10;Need to add a more intense gameplay music above birds sound.">
-      <change afterPath="$PROJECT_DIR$/code/bird.py" afterDir="false" />
+    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Updating code;&#10;Need to add code for animated bird;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/bird.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/bird.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/consts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/entityfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/entityfactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/gameplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/gameplay.py" afterDir="false" />
@@ -163,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755464416361</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updating code;&#10;Need to add code for animated bird;">
+      <option name="closed" value="true" />
+      <created>1755487248386</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1755487248386</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +180,7 @@
     <MESSAGE value="Refactored menu code;" />
     <MESSAGE value="Created code for game background;&#10;Proceed to add proper background images for parallax;" />
     <MESSAGE value="Finished gameplay background;&#10;Implement gameplay music;&#10;Need to add a more intense gameplay music above birds sound." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished gameplay background;&#10;Implement gameplay music;&#10;Need to add a more intense gameplay music above birds sound." />
+    <MESSAGE value="Updating code;&#10;Need to add code for animated bird;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating code;&#10;Need to add code for animated bird;" />
   </component>
 </project>

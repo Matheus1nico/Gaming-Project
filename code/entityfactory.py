@@ -15,4 +15,4 @@ class EntitiesFactory:
                 return background_list
 
             case 'Bird':
-                return Bird('Bird', (20, WINDOW_HEIGHT))
+                return Bird('Bird', position)

@@ -4,6 +4,15 @@ BIRD_HORIZONTALLY_SPEED = 2
 BIRD_UP_SPEED = 1
 BIRD_DOWN_SPEED = 3
 
+#Bird Animation
+BIRD_FRAMES = [
+            pygame.image.load("./assets/Bird0.png"),
+            pygame.image.load("./assets/Bird1.png"),
+            pygame.image.load("./assets/Bird2.png"),
+            pygame.image.load("./assets/Bird3.png"),
+            pygame.image.load("./assets/Bird4.png")
+        ]
+
 #Colors
 BLUE_C = (0, 0, 255)
 ORANGE_C = (255, 128, 0)
@@ -49,8 +58,6 @@ BIRD_DOWN = {'Bird': pygame.K_s or pygame.K_DOWN}
 BIRD_LEFT = {'Bird': pygame.K_a or pygame.K_LEFT}
 BIRD_RIGHT = {'Bird': pygame.K_d or pygame.K_RIGHT}
 
-#Bird Animation
-FRAMES = ['./assets/Bird0.png', './assets/Bird1.png', './assets/Bird2.png', './assets/Bird3.png', './assets/Bird4.png']
 #Window Sizes
 WINDOW_WIDTH = 576
 WINDOW_HEIGHT = 324
