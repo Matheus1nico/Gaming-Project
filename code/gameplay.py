@@ -9,7 +9,7 @@ class Gameplay:
         self.name = name
         self.entity_list: list[Entity] = []
         self.entity_list.extend(EntitiesFactory.get_entity(self.name + 'Bg'))
-        #self.entity_list.append(EntitiesFactory.get_entity('Bird'))
+        self.entity_list.append(EntitiesFactory.get_entity('Bird'))
 
     def run(self):
         pygame.mixer_music.load('./assets/Gameplay.flac')
