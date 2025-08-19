@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Updating code;&#10;Need to add code for animated bird;">
+    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Bird animation almost done;&#10;Proceed to finish animation and add gameplay control;">
+      <change afterPath="$PROJECT_DIR$/code/fruit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bird0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bird1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bird2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bird3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bird4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Bird5.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/bird.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/bird.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/entityfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/entityfactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/gameplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/gameplay.py" afterDir="false" />
     </list>
@@ -171,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755487248386</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Bird animation almost done;&#10;Proceed to finish animation and add gameplay control;">
+      <option name="closed" value="true" />
+      <created>1755541707657</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1755541707657</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,6 +197,7 @@
     <MESSAGE value="Created code for game background;&#10;Proceed to add proper background images for parallax;" />
     <MESSAGE value="Finished gameplay background;&#10;Implement gameplay music;&#10;Need to add a more intense gameplay music above birds sound." />
     <MESSAGE value="Updating code;&#10;Need to add code for animated bird;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating code;&#10;Need to add code for animated bird;" />
+    <MESSAGE value="Bird animation almost done;&#10;Proceed to finish animation and add gameplay control;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bird animation almost done;&#10;Proceed to finish animation and add gameplay control;" />
   </component>
 </project>

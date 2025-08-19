@@ -1,17 +1,8 @@
 import pygame
 #Bird Speed
 BIRD_HORIZONTALLY_SPEED = 2
-BIRD_UP_SPEED = 1
+BIRD_UP_SPEED = 2
 BIRD_DOWN_SPEED = 3
-
-#Bird Animation
-BIRD_FRAMES = [
-            pygame.image.load("./assets/Bird0.png"),
-            pygame.image.load("./assets/Bird1.png"),
-            pygame.image.load("./assets/Bird2.png"),
-            pygame.image.load("./assets/Bird3.png"),
-            pygame.image.load("./assets/Bird4.png")
-        ]
 
 #Colors
 BLUE_C = (0, 0, 255)
@@ -31,9 +22,29 @@ ENTITIES_HEALTH = {
     'GameplayBg3': 999,
     'GameplayBg4': 999,
     'Bird': 100,
-    'Player2': 100,
-    'Enemy1': 50,
-    'Enemy2': 60
+    'banana': 1,
+    'peach': 1,
+    'pear': 1,
+    'red-apple': 1,
+    'red-cherry': 1,
+    'red-grape': 1,
+    'strawberry': 1
+}
+
+ENTITIES_DAMAGES = {
+    'GameplayBg0': 0,
+    'GameplayBg1': 0,
+    'GameplayBg2': 0,
+    'GameplayBg3': 0,
+    'GameplayBg4': 0,
+    'Bird': 1,
+    'banana': 0,
+    'peach': 0,
+    'pear': 0,
+    'red-apple': 0,
+    'red-cherry': 0,
+    'red-grape': 0,
+    'strawberry': 0
 }
 
 ENTITIES_SPEED = {
@@ -42,21 +53,31 @@ ENTITIES_SPEED = {
                 'GameplayBg2': 3,
                 'GameplayBg3': 4,
                 'GameplayBg4': 2,
-                'Bird': 1,
-                'BirdShot': 4,
-                'Player2Shot': 4,
-                'Enemy1Shot': 6,
-                'Enemy2Shot': 6,
+                'Bird': 2,
+                'banana': 2,
+                'peach': 2,
+                'pear': 2,
+                'red-apple': 2,
+                'red-cherry': 2,
+                'red-grape': 2,
+                'strawberry': 2
 }
+#Enemy Spawn Timing
+FRUIT_SPAWN_EVENT = pygame.USEREVENT + 2
 
+FRUIT_SPAWN_STEP = 4000
+
+FRUIT_EVENT = pygame.USEREVENT + 1
+
+FRUTAS = ('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry')
 #Menu Options
 MENU_OPTIONS  = ('JOGAR', 'PONTUAÇÕES', 'SAIR ')
 
 #Gameplay keys
-BIRD_UP = {'Bird': pygame.K_w or pygame.K_UP}
-BIRD_DOWN = {'Bird': pygame.K_s or pygame.K_DOWN}
-BIRD_LEFT = {'Bird': pygame.K_a or pygame.K_LEFT}
-BIRD_RIGHT = {'Bird': pygame.K_d or pygame.K_RIGHT}
+BIRD_UP = {'Bird': pygame.K_w}
+BIRD_DOWN = {'Bird': pygame.K_s}
+BIRD_LEFT = {'Bird': pygame.K_a}
+BIRD_RIGHT = {'Bird': pygame.K_d}
 
 #Window Sizes
 WINDOW_WIDTH = 576

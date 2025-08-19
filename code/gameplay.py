@@ -1,9 +1,6 @@
-from opcode import i
-
+import random
 import pygame
-from code import bird
-from code.bird import Bird
-from code.consts import WINDOW_HEIGHT
+from code.consts import FRUIT_EVENT, FRUIT_SPAWN_STEP
 from code.entity import Entity
 from code.entityfactory import EntitiesFactory
 
@@ -14,7 +11,8 @@ class Gameplay:
         self.name = name
         self.entity_list: list[Entity] = []
         self.entity_list.extend(EntitiesFactory.get_entity(self.name + 'Bg'))
-        self.bird = EntitiesFactory.get_entity('Bird', (0,WINDOW_HEIGHT / 2))
+        self.entity_list.append(EntitiesFactory.get_entity('Bird'))
+        pygame.time.set_timer(FRUIT_EVENT, FRUIT_SPAWN_STEP)
 
     def run(self):
         pygame.mixer_music.load('./assets/Gameplay.flac')
@@ -27,13 +25,16 @@ class Gameplay:
                 self.window.blit(source = ent.surf, dest = ent.rect)
                 ent.move()
 
-            self.bird.update()
-            self.bird.draw_bird(self.window)
-
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     print('Closing Window')
                     pygame.quit()  # close window
                     quit()  # end pygame
+
+                if event.type == FRUIT_EVENT:
+                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry'))
+                    self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
+
+            print(self.entity_list[-1])
 
             pygame.display.flip()
