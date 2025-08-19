@@ -32,9 +32,7 @@ class Gameplay:
                     quit()  # end pygame
 
                 if event.type == FRUIT_EVENT:
-                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry'))
+                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry', 'black-berry-dark', 'black-cherry'))
                     self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
-
-            print(self.entity_list[-1])
 
             pygame.display.flip()

@@ -1,4 +1,5 @@
 import pygame
+
 #Bird Speed
 BIRD_HORIZONTALLY_SPEED = 2
 BIRD_UP_SPEED = 2
@@ -28,9 +29,13 @@ ENTITIES_HEALTH = {
     'red-apple': 1,
     'red-cherry': 1,
     'red-grape': 1,
-    'strawberry': 1
+    'strawberry': 1,
+    'black-cherry': 1,
+    'star-fruit': 1,
+    'black-berry-dark': 1,
 }
 
+#Entities Damage for Collisions
 ENTITIES_DAMAGES = {
     'GameplayBg0': 0,
     'GameplayBg1': 0,
@@ -44,7 +49,9 @@ ENTITIES_DAMAGES = {
     'red-apple': 0,
     'red-cherry': 0,
     'red-grape': 0,
-    'strawberry': 0
+    'strawberry': 0,
+    'black-berry-dark': 0,
+    'black-cherry': 0
 }
 
 ENTITIES_SPEED = {
@@ -54,22 +61,24 @@ ENTITIES_SPEED = {
                 'GameplayBg3': 4,
                 'GameplayBg4': 2,
                 'Bird': 2,
-                'banana': 2,
-                'peach': 2,
-                'pear': 2,
-                'red-apple': 2,
-                'red-cherry': 2,
-                'red-grape': 2,
-                'strawberry': 2
+                'banana': 4,
+                'peach': 5,
+                'pear': 4,
+                'red-apple': 6,
+                'red-cherry': 4,
+                'red-grape': 3,
+                'strawberry': 5,
+                'black-berry-dark': 6,
+                'black-cherry': 4,
+                'star-fruit': 6
 }
 #Enemy Spawn Timing
 FRUIT_SPAWN_EVENT = pygame.USEREVENT + 2
 
-FRUIT_SPAWN_STEP = 4000
+FRUIT_SPAWN_STEP = 3500
 
 FRUIT_EVENT = pygame.USEREVENT + 1
 
-FRUTAS = ('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry')
 #Menu Options
 MENU_OPTIONS  = ('JOGAR', 'PONTUAÇÕES', 'SAIR ')
 
