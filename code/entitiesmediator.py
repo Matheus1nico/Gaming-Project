@@ -24,10 +24,9 @@ class EntitiesMediator:
 
     @staticmethod
     def picking_verify(entity_list: list[Entity]):
-        for i in range(len(entity_list)):
-            for j in range(i + 1, len(entity_list)):
-                entities2 = entity_list[j]
-                EntitiesMediator.__verify_fruit_picking(entity_list[i], entity_list[j])
+        for _bird in range(len(entity_list)):
+            for _fruit in range(_bird + 1, len(entity_list)):
+                EntitiesMediator.__verify_fruit_picking(entity_list[_bird], entity_list[_fruit])
 
     @staticmethod
     def health_verify(entity_list: list[Entity]):

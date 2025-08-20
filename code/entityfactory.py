@@ -38,4 +38,4 @@ class EntitiesFactory:
             case ('black-cherry'):
                 return Fruit('black-cherry', (WINDOW_WIDTH + 10, random.randint(0, WINDOW_HEIGHT - 40)))
             case 'black-berry-dark':
-                return Fruit('black-berry-dark', (WINDOW_WIDTH + 5, random.randint(0, WINDOW_HEIGHT - 30)))
+                return Fruit('black-berry-dark', (WINDOW_WIDTH + 5, random.randint(0, WINDOW_HEIGHT - 35)))
