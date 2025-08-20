@@ -1,9 +1,9 @@
 import pygame
 
 #Bird Speed
-BIRD_HORIZONTALLY_SPEED = 2
-BIRD_UP_SPEED = 2
-BIRD_DOWN_SPEED = 3
+BIRD_HORIZONTALLY_SPEED = 3
+BIRD_UP_SPEED = 4
+BIRD_DOWN_SPEED = 4
 
 #Colors
 BLUE_C = (0, 0, 255)
@@ -61,16 +61,16 @@ ENTITIES_SPEED = {
                 'GameplayBg3': 4,
                 'GameplayBg4': 2,
                 'Bird': 2,
-                'banana': 4,
-                'peach': 5,
-                'pear': 4,
+                'banana': 7,
+                'peach': 6,
+                'pear': 7,
                 'red-apple': 6,
-                'red-cherry': 4,
-                'red-grape': 3,
-                'strawberry': 5,
-                'black-berry-dark': 6,
-                'black-cherry': 4,
-                'star-fruit': 6
+                'red-cherry': 7,
+                'red-grape': 6,
+                'strawberry': 6,
+                'black-berry-dark': 7,
+                'black-cherry': 6,
+                'star-fruit': 7
 }
 #Enemy Spawn Timing
 FRUIT_SPAWN_EVENT = pygame.USEREVENT + 2

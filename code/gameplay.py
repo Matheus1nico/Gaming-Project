@@ -1,6 +1,7 @@
 import random
 import pygame
 from code.consts import FRUIT_EVENT, FRUIT_SPAWN_STEP
+from code.entitiesmediator import EntitiesMediator
 from code.entity import Entity
 from code.entityfactory import EntitiesFactory
 
@@ -36,3 +37,7 @@ class Gameplay:
                     self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
 
             pygame.display.flip()
+
+            EntitiesMediator.picking_verify(self.entity_list)
+
+            EntitiesMediator.health_verify(self.entity_list)

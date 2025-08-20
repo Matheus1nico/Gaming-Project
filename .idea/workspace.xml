@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Added Bird spawn;&#10;Proceeding to adjust fruits images size;">
+    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Adjusted fruits images;&#10;Added all fruits;">
+      <change afterPath="$PROJECT_DIR$/code/entitiesmediator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Bird.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Bird.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/BirdDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/BirdUp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/banana.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/banana.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/peach.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/peach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pear.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pear.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/red-apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/red-apple.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/red-cherry.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/red-cherry.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/red-grape.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/red-grape.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/strawberry.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/strawberry.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/consts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/entityfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/entityfactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/gameplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/gameplay.py" afterDir="false" />
@@ -197,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755636656671</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adjusted fruits images;&#10;Added all fruits;">
+      <option name="closed" value="true" />
+      <created>1755643067652</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1755643067652</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adjusted fruits images;&#10;Added all fruits;">
+      <option name="closed" value="true" />
+      <created>1755643077397</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1755643077397</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -209,6 +216,7 @@
     <MESSAGE value="Updating code;&#10;Need to add code for animated bird;" />
     <MESSAGE value="Bird animation almost done;&#10;Proceed to finish animation and add gameplay control;" />
     <MESSAGE value="Added Bird spawn;&#10;Proceeding to adjust fruits images size;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Bird spawn;&#10;Proceeding to adjust fruits images size;" />
+    <MESSAGE value="Adjusted fruits images;&#10;Added all fruits;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted fruits images;&#10;Added all fruits;" />
   </component>
 </project>
