@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import pygame.image
-from code.consts import ENTITIES_HEALTH, ENTITIES_DAMAGES
+from code.consts import ENTITIES_HEALTH, ENTITIES_DAMAGES, ENTITIES_REWARD
 
 
 class Entity(ABC):
@@ -12,7 +12,8 @@ class Entity(ABC):
         self.speed = 0
         self.health = ENTITIES_HEALTH[self.name]
         self.damage = ENTITIES_DAMAGES[self.name]
-        #self.score = ENTITY_REWARD[self.name]
+        self.score = ENTITIES_REWARD[self.name]
+        self.last_collision = 'None'
 
     @abstractmethod
     def move(self):

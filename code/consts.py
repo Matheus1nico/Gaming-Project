@@ -62,20 +62,40 @@ ENTITIES_SPEED = {
                 'GameplayBg4': 2,
                 'Bird': 2,
                 'banana': 7,
-                'peach': 6,
+                'peach': 7,
                 'pear': 7,
-                'red-apple': 6,
+                'red-apple': 7,
                 'red-cherry': 7,
-                'red-grape': 6,
-                'strawberry': 6,
+                'red-grape': 7,
+                'strawberry': 7,
                 'black-berry-dark': 7,
-                'black-cherry': 6,
-                'star-fruit': 7
+                'black-cherry': 8,
+                'star-fruit': 8
 }
+
+ENTITIES_REWARD = {
+    'GameplayBg0': 0,
+    'GameplayBg1': 0,
+    'GameplayBg2': 0,
+    'GameplayBg3': 0,
+    'GameplayBg4': 0,
+    'Bird': 0,
+    'banana': 40,
+    'peach': 40,
+    'pear': 25,
+    'red-apple': 35,
+    'red-cherry': 25,
+    'red-grape': 30,
+    'strawberry': 45,
+    'black-berry-dark': 25,
+    'black-cherry': 45,
+    'star-fruit': 25
+}
+
 #Enemy Spawn Timing
 FRUIT_SPAWN_EVENT = pygame.USEREVENT + 2
 
-FRUIT_SPAWN_STEP = 3500
+FRUIT_SPAWN_STEP = 2400
 
 FRUIT_EVENT = pygame.USEREVENT + 1
 
