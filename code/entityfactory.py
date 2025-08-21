@@ -21,8 +21,8 @@ class EntitiesFactory:
                 return Bird('Bird', (10, WINDOW_HEIGHT / 2))
             case 'banana':
                 return Fruit('banana', (WINDOW_WIDTH + 20, random.randint(0, WINDOW_HEIGHT - 40)))
-            case 'peach':
-                return Fruit('peach', (WINDOW_WIDTH + 10, random.randint(0, WINDOW_HEIGHT - 40)))
+            case 'orange':
+                return Fruit('orange', (WINDOW_WIDTH + 10, random.randint(0, WINDOW_HEIGHT - 40)))
             case 'pear':
                 return Fruit('pear', (WINDOW_WIDTH + 10, random.randint(0, WINDOW_HEIGHT - 40)))
             case 'red-apple':

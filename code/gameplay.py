@@ -52,11 +52,11 @@ class Gameplay:
                     quit()  # end pygame
 
                 if event.type == FRUIT_EVENT and time_counter < 15:
-                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry', 'black-berry-dark', 'black-cherry', 'bomb', 'poison-bottle'))
+                    summon_choice = random.choice(('banana', 'orange', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry', 'black-berry-dark', 'black-cherry', 'bomb', 'poison-bottle'))
                     self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
 
                 elif event.type == FRUIT_EVENT and time_counter > 15:
-                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'strawberry', 'black-berry-dark', 'black-cherry', 'bomb', 'poison-bottle', 'hawk'))
+                    summon_choice = random.choice(('banana', 'orange', 'pear', 'red-apple', 'red-cherry', 'strawberry', 'black-berry-dark', 'black-cherry', 'bomb', 'poison-bottle', 'hawk'))
                     self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
 
             pygame.display.flip()
