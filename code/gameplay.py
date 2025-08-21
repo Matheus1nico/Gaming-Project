@@ -2,9 +2,9 @@ import random
 import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
-
+import time
 from code import bird
-from code.consts import FRUIT_EVENT, FRUIT_SPAWN_STEP, WINDOW_WIDTH, WHITE_C, WINDOW_HEIGHT
+from code.consts import FRUIT_EVENT, FRUIT_SPAWN_STEP, WHITE_C, WINDOW_HEIGHT
 from code.entitiesmediator import EntitiesMediator
 from code.entity import Entity
 from code.entityfactory import EntitiesFactory
@@ -23,16 +23,22 @@ class Gameplay:
         pygame.mixer_music.load('./assets/Gameplay.flac')
         pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
+        timer_start = time.perf_counter()
 
         while True:
             clock.tick(60)
+            end_counter = time.perf_counter()
+            time_counter = end_counter - timer_start
+
             for ent in self.entity_list:
                 self.window.blit(source = ent.surf, dest = ent.rect)
                 ent.move()
 
-                self.level_text(16, f'ENTIDADES: {len(self.entity_list)}', WHITE_C, (0, WINDOW_HEIGHT - 20))
+                self.level_text(16, f'Entidades: {len(self.entity_list)}', WHITE_C, (0, WINDOW_HEIGHT - 20))
                 if ent.name == 'Bird':
-                    self.level_text(16, f'Score: {ent.score}', WHITE_C, (0, 10))
+                    self.level_text(16, f'Vida: {ent.health}', WHITE_C, (2, 5))
+                    self.level_text(16, f'Score: {ent.score}', WHITE_C, (60, 5))
+                    self.level_text(16, f'Tempo: {time_counter:.2f} Segundos', WHITE_C, (128, 5))
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
