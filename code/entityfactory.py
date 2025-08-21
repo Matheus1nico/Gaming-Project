@@ -39,3 +39,9 @@ class EntitiesFactory:
                 return Fruit('black-cherry', (WINDOW_WIDTH + 10, random.randint(0, WINDOW_HEIGHT - 40)))
             case 'black-berry-dark':
                 return Fruit('black-berry-dark', (WINDOW_WIDTH + 5, random.randint(0, WINDOW_HEIGHT - 35)))
+            case 'bomb':
+                return Fruit('bomb', (WINDOW_WIDTH + 5, random.randint(0, WINDOW_HEIGHT - 35)))
+            case 'poison-bottle':
+                return Fruit('poison-bottle', (WINDOW_WIDTH + 5, random.randint(0, WINDOW_HEIGHT - 35)))
+            case 'hawk':
+                return Fruit('hawk', (WINDOW_WIDTH + 5, random.randint(0, WINDOW_HEIGHT - 35)))

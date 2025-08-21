@@ -3,7 +3,6 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 import time
-from code import bird
 from code.consts import FRUIT_EVENT, FRUIT_SPAWN_STEP, WHITE_C, WINDOW_HEIGHT
 from code.entitiesmediator import EntitiesMediator
 from code.entity import Entity
@@ -34,11 +33,17 @@ class Gameplay:
                 self.window.blit(source = ent.surf, dest = ent.rect)
                 ent.move()
 
-                self.level_text(16, f'Entidades: {len(self.entity_list)}', WHITE_C, (0, WINDOW_HEIGHT - 20))
                 if ent.name == 'Bird':
-                    self.level_text(16, f'Vida: {ent.health}', WHITE_C, (2, 5))
-                    self.level_text(16, f'Score: {ent.score}', WHITE_C, (60, 5))
-                    self.level_text(16, f'Tempo: {time_counter:.2f} Segundos', WHITE_C, (128, 5))
+                    self.level_text(18, f'Vida: {ent.health}', WHITE_C, (2, 5))
+                    self.level_text(18, f'Score: {ent.score}', WHITE_C, (60, 5))
+                    self.level_text(18, f'{time_counter:.2f}', WHITE_C, (2, WINDOW_HEIGHT - 15))
+                    if time_counter < 15:
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 450)
+                    elif time_counter > 15:
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 350)
+                    elif time_counter > 30:
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 275)
+
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -46,14 +51,19 @@ class Gameplay:
                     pygame.quit()  # close window
                     quit()  # end pygame
 
-                if event.type == FRUIT_EVENT:
-                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry', 'black-berry-dark', 'black-cherry'))
+                if event.type == FRUIT_EVENT and time_counter < 15:
+                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry', 'black-berry-dark', 'black-cherry', 'bomb', 'poison-bottle'))
+                    self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
+
+                elif event.type == FRUIT_EVENT and time_counter > 15:
+                    summon_choice = random.choice(('banana', 'peach', 'pear', 'red-apple', 'red-cherry', 'strawberry', 'black-berry-dark', 'black-cherry', 'bomb', 'poison-bottle', 'hawk'))
                     self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
 
             pygame.display.flip()
 
             EntitiesMediator.picking_verify(self.entity_list)
             EntitiesMediator.health_verify(self.entity_list)
+
 
     def level_text(self, text_size: int, text: str, text_color: tuple, text_position: tuple):
         text_font: Font = pygame.font.SysFont(name="Lucida Sans Typewriter", size=text_size)

@@ -1,4 +1,5 @@
 import pygame
+pygame.mixer.init()
 
 #Bird Speed
 BIRD_HORIZONTALLY_SPEED = 3
@@ -33,6 +34,9 @@ ENTITIES_HEALTH = {
     'black-cherry': 1,
     'star-fruit': 1,
     'black-berry-dark': 1,
+    'bomb': 1,
+    'poison-bottle': 1,
+    'hawk': 1
 }
 
 #Entities Damage for Collisions
@@ -43,34 +47,40 @@ ENTITIES_DAMAGES = {
     'GameplayBg3': 0,
     'GameplayBg4': 0,
     'Bird': 1,
-    'banana': 0,
-    'peach': 0,
-    'pear': 0,
-    'red-apple': 0,
-    'red-cherry': 0,
-    'red-grape': 0,
-    'strawberry': 0,
-    'black-berry-dark': 0,
-    'black-cherry': 0
+    'banana': -12,
+    'peach': -10,
+    'pear': -11,
+    'red-apple': -10,
+    'red-cherry': -12,
+    'red-grape': -15,
+    'strawberry': -10,
+    'black-berry-dark': -12,
+    'black-cherry': -12,
+    'bomb': 20,
+    'poison-bottle': 25,
+    'hawk': 30
 }
 
 ENTITIES_SPEED = {
-                'GameplayBg0': 0,
-                'GameplayBg1': 1,
-                'GameplayBg2': 3,
-                'GameplayBg3': 4,
-                'GameplayBg4': 2,
-                'Bird': 2,
-                'banana': 7,
-                'peach': 7,
-                'pear': 7,
-                'red-apple': 7,
-                'red-cherry': 7,
-                'red-grape': 7,
-                'strawberry': 7,
-                'black-berry-dark': 7,
-                'black-cherry': 8,
-                'star-fruit': 8
+    'GameplayBg0': 0,
+    'GameplayBg1': 1,
+    'GameplayBg2': 3,
+    'GameplayBg3': 4,
+    'GameplayBg4': 2,
+    'Bird': 2,
+    'banana': 7,
+    'peach': 7,
+    'pear': 7,
+    'red-apple': 7,
+    'red-cherry': 7,
+    'red-grape': 7,
+    'strawberry': 7,
+    'black-berry-dark': 7,
+    'black-cherry': 8,
+    'star-fruit': 8,
+    'bomb': 8,
+    'poison-bottle': 8,
+    'hawk': 9
 }
 
 ENTITIES_REWARD = {
@@ -89,18 +99,24 @@ ENTITIES_REWARD = {
     'strawberry': 45,
     'black-berry-dark': 25,
     'black-cherry': 45,
-    'star-fruit': 25
+    'star-fruit': 25,
+    'bomb': -20,
+    'poison-bottle': -25,
+    'hawk': -30
 }
 
 #Enemy Spawn Timing
 FRUIT_SPAWN_EVENT = pygame.USEREVENT + 2
 
-FRUIT_SPAWN_STEP = 2400
+FRUIT_SPAWN_STEP = 1700
 
 FRUIT_EVENT = pygame.USEREVENT + 1
 
 #Menu Options
 MENU_OPTIONS  = ('JOGAR', 'PONTUAÇÕES', 'SAIR ')
+
+#Sound Effects
+fruit_eat = pygame.mixer.Sound('./assets/fruit_eat.wav')
 
 #Gameplay keys
 BIRD_UP = {'Bird': pygame.K_w}

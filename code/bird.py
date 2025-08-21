@@ -9,6 +9,8 @@ from code.entity import Entity
 class Bird(Entity):
     def __init__(self, name: str, position: tuple):
         super().__init__(name, position)
+        self.last_damage_time = pygame.time.get_ticks()
+
 
     def move(self):
         # WASD player movement
