@@ -17,7 +17,10 @@ class Game:
                 gameplay = Gameplay(self.window, 'Gameplay')
                 gameplay_return = gameplay.run()
 
-            elif menu_return == MENU_OPTIONS[2]:
+                if gameplay_return == 'dead':
+                    continue
+
+            elif menu_return == MENU_OPTIONS[1]:
                 print('Quiting Game...')
                 pygame.quit()
                 quit()

@@ -1,9 +1,10 @@
+import asyncio
 import random
 import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 import time
-from code.consts import FRUIT_EVENT, FRUIT_SPAWN_STEP, WHITE_C, WINDOW_HEIGHT
+from code.consts import FRUIT_EVENT, FRUIT_SPAWN_STEP, WHITE_C, WINDOW_HEIGHT, WINDOW_WIDTH
 from code.entitiesmediator import EntitiesMediator
 from code.entity import Entity
 from code.entityfactory import EntitiesFactory
@@ -19,7 +20,7 @@ class Gameplay:
         pygame.time.set_timer(FRUIT_EVENT, FRUIT_SPAWN_STEP)
 
     def run(self):
-        pygame.mixer_music.load('./assets/Gameplay.flac')
+        pygame.mixer.music.load('./assets/gameplay_music.mp3')
         pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
         timer_start = time.perf_counter()
@@ -34,22 +35,25 @@ class Gameplay:
                 ent.move()
 
                 if ent.name == 'Bird':
-                    self.level_text(18, f'Vida: {ent.health}', WHITE_C, (2, 5))
-                    self.level_text(18, f'Score: {ent.score}', WHITE_C, (60, 5))
-                    self.level_text(18, f'{time_counter:.2f}', WHITE_C, (2, WINDOW_HEIGHT - 15))
+                    self.gameplay_text(18, f'Vida: {ent.health}', WHITE_C, (2, 5))
+                    self.gameplay_text(18, f'Score: {ent.score}', WHITE_C, (60, 5))
+                    self.gameplay_text(18, f'{time_counter:.2f}', WHITE_C, (2, WINDOW_HEIGHT - 15))
                     if time_counter < 15:
-                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 450)
-                    elif time_counter > 15:
-                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 350)
-                    elif time_counter > 30:
-                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 275)
-
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 300)
+                    elif 15 < time_counter < 30:
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 225)
+                    elif 30 < time_counter < 45:
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 150)
+                    elif time_counter > 45:
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 75)
+                    if ent.name == 'Bird' and ent.health <= 0:
+                        return 'dead'
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     print('Closing Window')
-                    pygame.quit()  # close window
-                    quit()  # end pygame
+                    pygame.quit()
+                    quit()
 
                 if event.type == FRUIT_EVENT and time_counter < 15:
                     summon_choice = random.choice(('banana', 'orange', 'pear', 'red-apple', 'red-cherry', 'red-grape', 'strawberry', 'black-berry-dark', 'black-cherry', 'bomb', 'poison-bottle'))
@@ -60,12 +64,10 @@ class Gameplay:
                     self.entity_list.append(EntitiesFactory.get_entity(summon_choice))
 
             pygame.display.flip()
-
             EntitiesMediator.picking_verify(self.entity_list)
-            EntitiesMediator.health_verify(self.entity_list)
+            EntitiesMediator.health_verify(Entity, self.entity_list)
 
-
-    def level_text(self, text_size: int, text: str, text_color: tuple, text_position: tuple):
+    def gameplay_text(self, text_size: int, text: str, text_color: tuple, text_position: tuple):
         text_font: Font = pygame.font.SysFont(name="Lucida Sans Typewriter", size=text_size)
         text_surf: Surface = text_font.render(text, True, text_color).convert_alpha()
         text_rect: Rect = text_surf.get_rect(left=text_position[0], top=text_position[1])

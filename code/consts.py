@@ -113,7 +113,7 @@ FRUIT_SPAWN_STEP = 1700
 FRUIT_EVENT = pygame.USEREVENT + 1
 
 #Menu Options
-MENU_OPTIONS  = ('JOGAR', 'PONTUAÇÕES', 'SAIR ')
+MENU_OPTIONS  = ('JOGAR', 'SAIR ')
 
 #Sound Effects
 fruit_eat = pygame.mixer.Sound('./assets/fruit_eat.wav')

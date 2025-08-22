@@ -1,9 +1,8 @@
 import pygame
-from pygame import Surface, Rect
 from pygame.font import Font
 import pygame.image
 
-from code.consts import WINDOW_WIDTH, GAME_TITLE_C, MENU_OPTIONS, WHITE_C, YELLOW_C
+from code.consts import WINDOW_WIDTH, GAME_TITLE_C, MENU_OPTIONS, WHITE_C, YELLOW_C, WINDOW_HEIGHT
 
 
 class Menu:
@@ -15,14 +14,15 @@ class Menu:
     def run(self):
         menu_option = 0
         #Adding Menu Music
-        pygame.mixer.music.load('./assets/Menu.wav')
-        pygame.mixer.music.play(-1)
+        pygame.mixer.music.load('./assets/Menu.mp3')
+        pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
         while True:
             clock.tick(60) #Fixing Menu FPS
 
             self.window.blit(source = self.surface, dest = self.rect)
             self.menu_text(85, "The Speedster Bird", GAME_TITLE_C, ((WINDOW_WIDTH / 2), 40))
+            self.menu_text(18, f'Use WASD para jogar, fique de olho na sua vida e tome cuidado com os objetos que irá coletar!', WHITE_C, (WINDOW_WIDTH / 2, WINDOW_HEIGHT - 10))
 
             for op in range(len(MENU_OPTIONS)):
                 if op == menu_option:

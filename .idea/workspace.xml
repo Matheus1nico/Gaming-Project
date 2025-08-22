@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Updated gameplay UI;&#10;Implemented bad objects for collisions;&#10;Updated gameplay timing;">
+    <list default="true" id="041a6a9e-1a23-4270-911e-c61ae92d6e39" name="Changes" comment="Updated gameplay UI;&#10;Implemented bad objects for collisions;&#10;Updated gameplay timing;&#10;Implemented auto_health_decrement;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Gameplay.flac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Menu.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/entityfactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/entityfactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/entitiesmediator.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/entitiesmediator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/gameplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/gameplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755813727497</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Updated gameplay UI;&#10;Implemented bad objects for collisions;&#10;Updated gameplay timing;&#10;Implemented auto_health_decrement;">
+      <option name="closed" value="true" />
+      <created>1755814073277</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1755814073277</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,6 +273,7 @@
     <MESSAGE value="Score implemented;&#10;Proceeding to add health and poisoned fruits;" />
     <MESSAGE value="Finished time counter;" />
     <MESSAGE value="Updated gameplay UI;&#10;Implemented bad objects for collisions;&#10;Updated gameplay timing;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gameplay UI;&#10;Implemented bad objects for collisions;&#10;Updated gameplay timing;" />
+    <MESSAGE value="Updated gameplay UI;&#10;Implemented bad objects for collisions;&#10;Updated gameplay timing;&#10;Implemented auto_health_decrement;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated gameplay UI;&#10;Implemented bad objects for collisions;&#10;Updated gameplay timing;&#10;Implemented auto_health_decrement;" />
   </component>
 </project>

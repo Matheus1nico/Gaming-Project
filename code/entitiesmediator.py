@@ -1,11 +1,15 @@
 import pygame
+
+from code import menu
 from code.bird import Bird
 from code.consts import fruit_eat
 from code.entity import Entity
 from code.fruit import Fruit
 
+
 class EntitiesMediator:
     pygame.mixer.init()
+
     @staticmethod
     def __window_collision_verify(ent: Entity):
         if isinstance(ent, Fruit):
@@ -36,7 +40,7 @@ class EntitiesMediator:
                 EntitiesMediator.__verify_fruit_picking(entity_list[ent1], entity_list[ent2])
 
     @staticmethod
-    def health_verify(entity_list: list[Entity]):
+    def health_verify(self, entity_list: list[Entity]):
         for ent in entity_list:
             if ent.health > 100:
                 ent.health = 100
@@ -61,3 +65,6 @@ class EntitiesMediator:
         if current_time - self.last_damage_time >= decrement_lapse:
             self.health -= 1
             self.last_damage_time = current_time
+
+
+
