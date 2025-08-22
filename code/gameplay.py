@@ -42,10 +42,8 @@ class Gameplay:
                         EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 300)
                     elif 15 < time_counter < 30:
                         EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 225)
-                    elif 30 < time_counter < 45:
-                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 150)
-                    elif time_counter > 45:
-                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 75)
+                    elif 30 < time_counter:
+                        EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 200)
                     if ent.name == 'Bird' and ent.health <= 0:
                         return 'dead'
 
