@@ -44,8 +44,8 @@ class Gameplay:
                         EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 225)
                     elif 30 < time_counter:
                         EntitiesMediator.auto_health_decrement(ent, decrement_lapse = 200)
-                    if ent.name == 'Bird' and ent.health <= 0:
-                        return 'dead'
+                if ent.health <= 0:
+                    return 'dead'
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
